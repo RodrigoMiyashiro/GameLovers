@@ -10,6 +10,7 @@ target 'GameLovers' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Kingfisher', '~> 4.6'
   pod 'UIScrollView-InfiniteScroll', '~> 1.0'
+  pod 'Parchment', '~> 1.1'
 
   target 'GameLoversTests' do
     inherit! :search_paths

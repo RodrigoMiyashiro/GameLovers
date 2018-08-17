@@ -1,21 +1,24 @@
 PODS:
   - Alamofire (4.7.0)
   - Kingfisher (4.6.4)
+  - Parchment (1.1.0)
   - SwiftyJSON (4.0.0)
   - UIScrollView-InfiniteScroll (1.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - Kingfisher (~> 4.6)
+  - Parchment
   - SwiftyJSON (~> 4.0)
   - UIScrollView-InfiniteScroll (~> 1.0)
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
+  Parchment: 88f4b2642a09f37ee314a7492067a9ce04edc3b8
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   UIScrollView-InfiniteScroll: c132d6d5851daff229ab4a1060ccf70a05a051c9
 
-PODFILE CHECKSUM: deca98817574b159346c1210eaf77ed1a0c6b89b
+PODFILE CHECKSUM: 0a438d2714702aa747e72996c8d603c6f712eb38
 
 COCOAPODS: 1.4.0
