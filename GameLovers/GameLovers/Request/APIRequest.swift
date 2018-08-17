@@ -29,7 +29,7 @@ class APIRequest: APIRequestProtocol
 }
 
 
-extension APIRequest//: APIRequestListPlatformIntegerProtocol
+extension APIRequest
 {
     static func getListPlatformInteger(completion: @escaping (Result<ListPlatformInteger>) -> Void)
     {
@@ -51,7 +51,7 @@ extension APIRequest//: APIRequestListPlatformIntegerProtocol
     }
 }
 
-extension APIRequest//: APIRequestListPlatformProtocol
+extension APIRequest
 {
     static func getListPlatform(withString string: String, completion: @escaping (Result<ListPlatform>) -> Void)
     {
@@ -73,7 +73,7 @@ extension APIRequest//: APIRequestListPlatformProtocol
     }
 }
 
-extension APIRequest//: APIRequestListGameSimpleProtocol
+extension APIRequest
 {
     static func getListGamesSimple(withString string: String, completion: @escaping (Result<ListGames>) -> Void)
     {
@@ -95,7 +95,7 @@ extension APIRequest//: APIRequestListGameSimpleProtocol
     }
 }
 
-extension APIRequest//: APIRequestGameCompleteProtocol
+extension APIRequest
 {
     static func getGameComplete(withString string: String, completion: @escaping (Result<GameComplete>) -> Void)
     {
@@ -117,7 +117,7 @@ extension APIRequest//: APIRequestGameCompleteProtocol
     }
 }
 
-extension APIRequest//: APIRequestListGenreProtocol
+extension APIRequest
 {
     static func getListGenres(withString string: String, completion: @escaping (Result<ListGenres>) -> Void)
     {

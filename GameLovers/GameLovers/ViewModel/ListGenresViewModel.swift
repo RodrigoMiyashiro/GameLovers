@@ -14,7 +14,7 @@ protocol ListGenresViewModelProtocol
     var listGenresDidChange: ((ListGenresViewModelProtocol) -> Void)? { get set }
     
     init()
-    func getListGernes(completion: @escaping (Error) -> Void)
+    func getListGernes(withGenresID listIDs: String?, completion: @escaping (Error?) -> Void)
 }
 
 class ListGenresViewModel: ListGenresViewModelProtocol
@@ -37,9 +37,9 @@ class ListGenresViewModel: ListGenresViewModelProtocol
 
 extension ListGenresViewModel
 {
-    func getListGernes(completion: @escaping (Error) -> Void)
+    func getListGernes(withGenresID listIDs: String?, completion: @escaping (Error?) -> Void)
     {
-        APIRequest.getListGenres(withString: "") { (result) in
+        APIRequest.getListGenres(withString: listIDs ?? "") { (result) in
             switch result
             {
             case .success(let list):

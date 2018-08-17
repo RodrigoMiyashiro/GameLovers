@@ -21,7 +21,7 @@ class ListGenres: NSObject, ListControlProtocol
     required convenience init(dataJSON: JSON)
     {
         self.init()
-        parseJSON(arrayJSON: dataJSON["genres"].arrayValue)
+        parseJSON(arrayJSON: dataJSON.arrayValue)
     }
     
     func parseJSON(arrayJSON: [JSON])
@@ -31,5 +31,10 @@ class ListGenres: NSObject, ListControlProtocol
             let newGenre = Genre(dataJSON: element)
             genres.append(newGenre)
         }
+    }
+    
+    func stringGenres() -> String
+    {
+        return genres.map{ "\($0.name)" }.joined(separator: ", ")
     }
 }

@@ -10,6 +10,7 @@ import Foundation
 
 protocol GameCompleteViewModelProtocol
 {
+    var stringID: String? { get set }
     var gameComplete: GameComplete? { get }
     var gameCompleteDidChange: ((GameCompleteViewModelProtocol) -> Void)? { get set }
     
@@ -19,6 +20,7 @@ protocol GameCompleteViewModelProtocol
 
 class GameCompleteViewModel: GameCompleteViewModelProtocol
 {
+    var stringID: String?
     var gameComplete: GameComplete?
     {
         didSet
@@ -40,7 +42,7 @@ extension GameCompleteViewModel
 {
     func getGameComplete(completion: @escaping (Error) -> Void)
     {
-        APIRequest.getGameComplete(withString: "") { (result) in
+        APIRequest.getGameComplete(withString: stringID ?? "") { (result) in
             switch result
             {
             case .success(let game):

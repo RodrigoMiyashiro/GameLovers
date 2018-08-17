@@ -28,7 +28,7 @@ enum ExtensionURL: String
     case image = "image/"
     case upload = "upload/"
     case thumb = "t_thumb/"
-    case imgBig = "t_cover_big"
+    case imgBig = "t_cover_big/"
 }
 
 enum ParameterURL: String

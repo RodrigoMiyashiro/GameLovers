@@ -9,7 +9,7 @@
 import UIKit
 import Parchment
 
-class HomeViewController: CustomViewController
+final class HomeViewController: CustomViewController
 {
     // MARK: - Lets and Vars
     var pagingViewController: PagingViewController<PagingIndexItem>!

@@ -15,6 +15,13 @@ class Game
     var name: String
     var image: Cover
     
+    init()
+    {
+        id = 0
+        name = ""
+        image = Cover()
+    }
+    
     init(dataJSON: JSON)
     {
         id = dataJSON["id"].intValue
