@@ -22,8 +22,9 @@ final class HomeViewController: CustomViewController
         didSet
         {
             listPlatforms?.platformsDidChange = { [weak self] viewModel in
-                self?.pagingViewController.reloadData()
+                self?.configPageViewController()
                 self?.configPages()
+                self?.pagingViewController.reloadData()
                 Spinner.shared.stopAnimating()
             }
         }
@@ -46,7 +47,7 @@ final class HomeViewController: CustomViewController
         
         listPlatforms = PlatformViewModel()
         
-        configPageViewController()
+//        configPageViewController()
         
         requestPlatforms()
     }

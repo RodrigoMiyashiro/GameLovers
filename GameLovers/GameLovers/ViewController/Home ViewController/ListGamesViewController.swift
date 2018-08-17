@@ -39,6 +39,8 @@ final class ListGamesViewController: CustomViewController
         
         listGamesViewModel = ListGameViewModel()
         
+        print("🕵️‍♂️ ?? \(platform?.name) ??")
+        
         requestListGames(numberOfElementsCurrent: listGamesViewModel?.listGames?.games.count ?? 0)
         infinityScroll()
     }
@@ -64,6 +66,7 @@ final class ListGamesViewController: CustomViewController
     func requestListGames(numberOfElementsCurrent: Int)
     {
         listGamesViewModel?.stringInteger = platform?.games.ids.getStrFromArray(toPosition: numberOfElementsCurrent)
+        print("🧐 List: \(listGamesViewModel?.stringInteger)")
         
         listGamesViewModel?.getListGames(completion: { (error) in
             self.setNavigationType(.present, viewController: Alert.show(message: error.localizedDescription))

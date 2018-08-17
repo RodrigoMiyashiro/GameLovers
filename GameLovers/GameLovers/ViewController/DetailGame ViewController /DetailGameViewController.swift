@@ -65,7 +65,7 @@ final class DetailGameViewController: CustomViewController
         gameCompleteViewModel = GameCompleteViewModel()
         genresViewModel = ListGenresViewModel()
         platformsViewModel = PlatformViewModel()
-                
+        
         requestGame()
     }
     
@@ -84,6 +84,7 @@ final class DetailGameViewController: CustomViewController
         
         gameImage.download(image: urlImg, placeholder: Placeholder.image.rawValue)
     }
+    
     
     func set(name: String?)
     {
