@@ -4,7 +4,8 @@ Game Lovers App
 Linguagem: Swift</br>
 Versão: iOS 11</br>
 
-[imagens]
+![alt text](https://github.com/RodrigoMiyashiro/GameLovers/blob/develop/Images/image001.png)
+![alt text](https://github.com/RodrigoMiyashiro/GameLovers/blob/develop/Images/image002.png)
 
 ## Informações Gerais
 
@@ -23,15 +24,15 @@ Pods utilizados:
 - Parchment - versão: 1.1
 
 <b>Motivos</b>
-- Alamofire: Para fazer as requisições na web. Motivo: Uma das depências mais utilizadas pela comunidade com alta qualidade e sempre atualizada.
-- SwiftyJSON: Para parcear o JSON. Motivo: Simplicidade de parcear JSON, e ainda, possibilita garantir valor opcional caso o atributo venha nulo.
-- Kingfisher: Para fazer o download da imagem e gerenciar o cache da imagem. Motivo: Dependência leve para fazer download e cahce de imagens da internet.
-- UIScrollView-InfiniteScroll: Para controlar o infity scroll.
+- <b>Alamofire</b>: Para fazer as requisições na web. Motivo: Uma das depências mais utilizadas pela comunidade com alta qualidade e sempre atualizada.
+- <b>SwiftyJSON</b>: Para parcear o JSON. Motivo: Simplicidade de parcear JSON, e ainda, possibilita garantir valor opcional caso o atributo venha nulo.
+- <b>Kingfisher</b>: Para fazer o download da imagem e gerenciar o cache da imagem. Motivo: Dependência leve para fazer download e cahce de imagens da internet.
+- <b>UIScrollView-InfiniteScroll</b>: Para controlar o infity scroll.
 Motivo: Facilidade em criar scroll infinito assíncrono.
-- Parchment: Para criar as tabs superiores presentes na tela home. Motivos: Eficiência no consumo de memória, possibilidade de scroll infinito e facilidade de customização.
+- <b>Parchment</b>: Para criar as tabs superiores presentes na tela home. Motivos: Eficiência no consumo de memória, possibilidade de scroll infinito e facilidade de customização.
 
 #### Arquitetura
-<b>MVVM<b></br>
+<b>MVVM</b>
 Devido a simplicidade de implementação em relação a outras arquiteturas como VIPER e VIP (Clean Architecture), contribuindo para a separação de responsabilidades, principalmente, reduzindo a carga de responsabilidade da ViewController.
 
 ### Importante!
