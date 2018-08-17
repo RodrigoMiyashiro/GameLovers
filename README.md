@@ -4,8 +4,7 @@ Game Lovers App
 Linguagem: Swift</br>
 Versão: iOS 11</br>
 
-![alt text](https://github.com/RodrigoMiyashiro/GameLovers/blob/develop/Images/image001.png)
-![alt text](https://github.com/RodrigoMiyashiro/GameLovers/blob/develop/Images/image002.png)
+![alt text](https://github.com/RodrigoMiyashiro/GameLovers/blob/develop/Images/image001.png) ![alt text](https://github.com/RodrigoMiyashiro/GameLovers/blob/develop/Images/image002.png)
 
 ## Informações Gerais
 
@@ -32,7 +31,7 @@ Motivo: Facilidade em criar scroll infinito assíncrono.
 - <b>Parchment</b>: Para criar as tabs superiores presentes na tela home. Motivos: Eficiência no consumo de memória, possibilidade de scroll infinito e facilidade de customização.
 
 #### Arquitetura
-<b>MVVM</b>
+<b>MVVM</b></br>
 Devido a simplicidade de implementação em relação a outras arquiteturas como VIPER e VIP (Clean Architecture), contribuindo para a separação de responsabilidades, principalmente, reduzindo a carga de responsabilidade da ViewController.
 
 ### Importante!
