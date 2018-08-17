@@ -9,7 +9,7 @@
 import UIKit
 import UIScrollView_InfiniteScroll
 
-class ListGamesViewController: CustomViewController
+final class ListGamesViewController: CustomViewController
 {
     // MARK: - Lets and Vars
     var platform: Platform?
@@ -39,6 +39,8 @@ class ListGamesViewController: CustomViewController
         
         listGamesViewModel = ListGameViewModel()
         
+        print("🕵️‍♂️ ?? \(platform?.name) ??")
+        
         requestListGames(numberOfElementsCurrent: listGamesViewModel?.listGames?.games.count ?? 0)
         infinityScroll()
     }
@@ -64,6 +66,7 @@ class ListGamesViewController: CustomViewController
     func requestListGames(numberOfElementsCurrent: Int)
     {
         listGamesViewModel?.stringInteger = platform?.games.ids.getStrFromArray(toPosition: numberOfElementsCurrent)
+        print("🧐 List: \(listGamesViewModel?.stringInteger)")
         
         listGamesViewModel?.getListGames(completion: { (error) in
             self.setNavigationType(.present, viewController: Alert.show(message: error.localizedDescription))
@@ -75,7 +78,15 @@ class ListGamesViewController: CustomViewController
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        
+        if segue.identifier == Segue.gameDetail.rawValue
+        {
+            let vcDestination = segue.destination as! DetailGameViewController
+            
+            if let game = sender as? Game
+            {
+                vcDestination.game = game
+            }
+        }
     }
     
     
@@ -106,7 +117,13 @@ extension ListGamesViewController: UICollectionViewDataSource
 // MARK: - Extension CollectionView Delegate
 extension ListGamesViewController: UICollectionViewDelegate
 {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+        let itemSelected = indexPath.item
+        let gameSelected = listGamesViewModel?.listGames?.games[itemSelected]
+        
+        performSegue(withIdentifier: Segue.gameDetail.rawValue, sender: gameSelected)
+    }
 }
 
 

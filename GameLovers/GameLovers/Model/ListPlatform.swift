@@ -32,4 +32,9 @@ class ListPlatform: NSObject, ListControlProtocol
             platforms.append(newPlatform)
         }
     }
+    
+    func stringPlatforms() -> String
+    {
+        return platforms.map{ "\($0.name)" }.joined(separator: ", ")
+    }
 }

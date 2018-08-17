@@ -16,6 +16,14 @@ class Cover
     var width: Int
     var height: Int
     
+    init()
+    {
+        url = ""
+        cloudinaryID = ""
+        width = 0
+        height = 0
+    }
+    
     init(dataJSON: JSON)
     {
         url = dataJSON["url"].stringValue

@@ -29,6 +29,7 @@
 		5B0BF2382126993900E82DD7 /* Cover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0BF2372126993900E82DD7 /* Cover.swift */; };
 		5B0BF23A2126995200E82DD7 /* ListGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0BF2392126995200E82DD7 /* ListGenres.swift */; };
 		5B0BF23C2126996200E82DD7 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0BF23B2126996200E82DD7 /* Genre.swift */; };
+		5B0BF23F2126A1D000E82DD7 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0BF23E2126A1D000E82DD7 /* Segue.swift */; };
 		5B48F388212553B0001B7FB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B48F387212553B0001B7FB2 /* AppDelegate.swift */; };
 		5B48F38D212553B0001B7FB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B48F38B212553B0001B7FB2 /* Main.storyboard */; };
 		5B48F38F212553B1001B7FB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B48F38E212553B1001B7FB2 /* Assets.xcassets */; };
@@ -101,6 +102,7 @@
 		5B0BF2372126993900E82DD7 /* Cover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cover.swift; sourceTree = "<group>"; };
 		5B0BF2392126995200E82DD7 /* ListGenres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGenres.swift; sourceTree = "<group>"; };
 		5B0BF23B2126996200E82DD7 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		5B0BF23E2126A1D000E82DD7 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		5B48F384212553B0001B7FB2 /* GameLovers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameLovers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B48F387212553B0001B7FB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B48F38C212553B0001B7FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -204,6 +206,14 @@
 				5B0BF22721268FB500E82DD7 /* PlaceholderName.swift */,
 			);
 			path = "Placeholder Name";
+			sourceTree = "<group>";
+		};
+		5B0BF23D2126A1A800E82DD7 /* Segue */ = {
+			isa = PBXGroup;
+			children = (
+				5B0BF23E2126A1D000E82DD7 /* Segue.swift */,
+			);
+			path = Segue;
 			sourceTree = "<group>";
 		};
 		5B48F37B212553AF001B7FB2 = {
@@ -356,6 +366,7 @@
 				5B0BF216212671DA00E82DD7 /* DestinationView */,
 				5B0BF22121267D6E00E82DD7 /* Navigation Type */,
 				5B0BF215212671C200E82DD7 /* Storyboard Name */,
+				5B0BF23D2126A1A800E82DD7 /* Segue */,
 				5B0BF22621268FA100E82DD7 /* Placeholder Name */,
 				5B48F3C0212554AF001B7FB2 /* Configuration */,
 			);
@@ -800,6 +811,7 @@
 				5B48F3DE21255584001B7FB2 /* APIRequest.swift in Sources */,
 				5B48F3D021255564001B7FB2 /* Spinner.swift in Sources */,
 				5B0BF218212671ED00E82DD7 /* DestinationView.swift in Sources */,
+				5B0BF23F2126A1D000E82DD7 /* Segue.swift in Sources */,
 				5B0BF21C2126726300E82DD7 /* ViewControllerIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

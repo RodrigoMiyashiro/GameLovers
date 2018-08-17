@@ -11,7 +11,6 @@ import Foundation
 protocol PlatformViewModelProtocol: class
 {
     var platforms: ListPlatform? { get }
-//    var stringInteger: String? { get set }
     var platformsDidChange: ((PlatformViewModelProtocol) -> Void)? { get set }
     
     init()
@@ -21,9 +20,7 @@ protocol PlatformViewModelProtocol: class
 
 
 class PlatformViewModel: PlatformViewModelProtocol
-{
-//    var stringInteger: String?
-    
+{    
     var platformIntegerList: PlatformIntegerViewModelProtocol?
     
     var platforms: ListPlatform?

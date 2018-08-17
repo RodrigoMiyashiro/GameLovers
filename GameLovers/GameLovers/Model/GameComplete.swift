@@ -16,8 +16,19 @@ class GameComplete
     var avaiablePlatformsInteger: ListInteger
     var summary: String
     
-    init(dataJSON: JSON)
+    init()
     {
+        game = Game()
+        genreInteger = ListInteger()
+        avaiablePlatformsInteger = ListInteger()
+        summary = ""
+    }
+    
+    convenience init(dataJSON: JSON)
+    {
+        self.init()
+        
+        guard let dataJSON = dataJSON.arrayValue.first else { return }
         game = Game(dataJSON: dataJSON)
         genreInteger = ListInteger(dataJSON: dataJSON["genres"])
         avaiablePlatformsInteger = ListInteger(dataJSON: dataJSON["platforms"])

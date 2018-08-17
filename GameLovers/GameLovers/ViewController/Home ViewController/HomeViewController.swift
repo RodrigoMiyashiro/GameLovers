@@ -9,7 +9,7 @@
 import UIKit
 import Parchment
 
-class HomeViewController: CustomViewController
+final class HomeViewController: CustomViewController
 {
     // MARK: - Lets and Vars
     var pagingViewController: PagingViewController<PagingIndexItem>!
@@ -22,8 +22,9 @@ class HomeViewController: CustomViewController
         didSet
         {
             listPlatforms?.platformsDidChange = { [weak self] viewModel in
-                self?.pagingViewController.reloadData()
+                self?.configPageViewController()
                 self?.configPages()
+                self?.pagingViewController.reloadData()
                 Spinner.shared.stopAnimating()
             }
         }
@@ -46,7 +47,7 @@ class HomeViewController: CustomViewController
         
         listPlatforms = PlatformViewModel()
         
-        configPageViewController()
+//        configPageViewController()
         
         requestPlatforms()
     }
